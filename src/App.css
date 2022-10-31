@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body{
+  background-image: url("https://images.unsplash.com/photo-1523289333742-be1143f6b766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-position: top; 
+  background-size: cover;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  display: flex;
+  justify-content:center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:90%;
+  background-color: rgba(7, 146, 255, 0.11);
+  margin:25px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1{
+  margin-top:50px;
+  color:red;
+  text-shadow: black 1px 1px 1px;
+  font-weight: bold;
+  font-size: 60px;
+  background-color: white;
+  padding:10px;
+  font-family: 'Inter', sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  height: 100vh;
+}
+
+.inputAndControls{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+}
+
+input{
+  padding:10px;
+  margin:20px;
+  border:none;
+  font-size:20px;
+  font-family: 'Inter', sans-serif;
+}
+.btnAdd{
+  margin: 20px;
+  padding:10px;
+  background-color: #228b22;
+  border:1px solid white;
+  color:white;
+  text-shadow: black 1px 1px 1px;
+  font-size:20px;
+  font-family: 'Inter', sans-serif;
+}
+.btnClearAll{
+  margin: 20px;
+  padding:10px;
+  border:1px solid white;
+  color:white;
+  text-shadow: black 1px 1px 1px;
+  font-size:20px;
+  font-family: 'Inter', sans-serif;
+  background-color: #ff4040;
+}
+.list{
+  width:100%;
+}
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  font-family: 'Inter', sans-serif;
+}
+
+li{
+  padding:10px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom: 2px;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size:20px;
+}
+
+.crossed{
+  text-decoration: line-through 2px red;
+  background-color: #dcdcdc;
+}
+
+@media all and (max-width:800px){
+  .btnAdd, .btnClearAll, input, li{
+    font-size:15px;
+  }
+}
+
+@media all and (max-width:500px){
+  h1{
+    font-size: 40px;
+  }
+  .btnAdd, .btnClearAll, input, li{
+    font-size:12px;
+    margin: 10px;
   }
 }
