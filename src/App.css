@@ -98,6 +98,9 @@ li{
   .btnAdd, .btnClearAll, input, li{
     font-size:15px;
   }
+  h1{
+      color:red;
+  }
 }
 
 @media all and (max-width:500px){
@@ -107,5 +110,12 @@ li{
   .btnAdd, .btnClearAll, input, li{
     font-size:12px;
     margin: 10px;
+  }
+}
+
+@media all and (max-width:500px){
+  .btnAdd, .btnClearAll, input, li{
+    font-size:10px;
+    margin: 7px;
   }
 }
