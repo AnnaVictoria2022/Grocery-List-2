@@ -99,7 +99,7 @@ li{
     font-size:15px;
   }
   h1{
-      color:red;
+      color:blue;
   }
 }
 
@@ -116,6 +116,6 @@ li{
 @media all and (max-width:500px){
   .btnAdd, .btnClearAll, input, li{
     font-size:10px;
-    margin: 7px;
+    margin: 5px;
   }
 }
